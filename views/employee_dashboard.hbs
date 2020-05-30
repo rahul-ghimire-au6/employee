@@ -1,0 +1,19 @@
+{{>header3}}
+
+
+
+<div style="margin-left: 2em; margin-top:5em">
+{{#each data1}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Employee Name: {{name}}</h5>
+    <p>Employee Email: {{email}}</p>
+    <p>Past Company: {{past_company}}</p>
+    <p>Past Joining Date: {{past_joining_date}}</p>
+    <p>Past Resignation Date: {{past_resignation_date}}</p>
+    <p>Current Company: {{current_company}}</p>
+    <p>Current Joining Date: {{current_joining_date}}</p>
+  </div>
+</div>
+{{/each}}
+</div>

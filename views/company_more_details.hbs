@@ -1,0 +1,16 @@
+{{>header3}}
+<div style="margin-left: 2em; margin-top:5em">
+{{#each data}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h4 class="card-title">Company name: {{company_name}}</h4>
+    <h5 class="card-title">Employee name: {{employee_id.name}}</h5>
+    <p>Employee Email: {{employee_id.email}}</p>
+    <p>Past Company: {{employee_id.past_company}}</p>
+    <p>Past Joining Date: {{employee_id.past_joining_date}}</p>
+    <p>Current Company: {{employee_id.current_company}}</p>
+    <p>Current Joining Date: {{employee_id.current_joining_date}}</p>
+  </div>
+</div>
+{{/each}}
+</div>

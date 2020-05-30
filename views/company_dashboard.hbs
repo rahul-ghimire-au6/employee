@@ -1,0 +1,16 @@
+{{>header3}}
+
+<div style="margin-left: 2em; margin-top:5em">
+{{#each data}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Company Name: {{company_name}}</h5>
+    <p>Company Type: {{company_type}}</p>
+    <p>Company Email: {{email}}</p>
+    <p>Company Owner: {{created_by}}</p>
+    <p class="card-text">Company Address: {{address}}</p>
+    <center><a href="/to_more_details/{{_id}}" class="card-link">More Details</a></center>
+  </div>
+</div>
+{{/each}}
+</div>
